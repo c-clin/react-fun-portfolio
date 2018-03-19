@@ -1,0 +1,41 @@
+header {
+	position: relative;
+	display: block;
+	width: 100%;
+	background: $black;
+	height: 80px;
+	color: $white;
+
+	nav {
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 50%; right: 15px;
+		@include translateY(-50%);
+
+
+		ul li {
+			list-style-type: none;
+			display: inline-block;
+			margin-right: 20px;
+
+		}
+
+		a {
+		font-size: 19px;
+		line-height: normal;
+		color: $white;
+		text-decoration: none;
+		}	
+
+		&:hover {
+		text-decoration: none;
+		color: dodgerblue;
+		@include transition(.4s ease-in-out);
+		}
+	}
+}
+
+
+
+
