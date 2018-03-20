@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  Switch
 } from 'react-router-dom';
 // components
 import Home from './components/Home';
@@ -18,10 +19,12 @@ class App extends Component {
       <Router>
         <div className="App">
         <Header />
-          <Route exact path='/' component={Home} />
-          <Route exact path='/About' component={About} />
-          <Route exact path='/Contact' component={Contact} />          
-          </div>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/About' component={About} />
+            <Route exact path='/Contact' component={Contact} />          
+          </Switch>
+        </div>
       </Router>
     );
   }
