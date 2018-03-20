@@ -1,6 +1,6 @@
 # React-Fun-Portfolio
 
-## This is a fun, side project I've started to build to put my knowledge of React to use.
+## This is a side project that I've started for fun to play around with my React knowledge. 
 
 ### Dependencies
 * React.js
