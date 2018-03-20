@@ -11,7 +11,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Contact from './components/Contact';
 
-import './assets/css/main.min.css';
+import './assets/css/main.css';
 
 class App extends Component {
   render() {
