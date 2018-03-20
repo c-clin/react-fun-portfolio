@@ -1,7 +1,42 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
+
+// https://api.unsplash.com/photos/random?&query=cats&client_id=8a3b86c522f37241f107be57b5b3713407e5e3c59942bde90f13a62846da1106
+
+const clientID = "8a3b86c522f37241f107be57b5b3713407e5e3c59942bde90f13a62846da1106"
+const query = 'cats'
+
+var finalURL = `https://api.unsplash.com/photos/random?&query=${query}&client_id=${clientID}`
 
 
 class About extends Component {
+
+    constructor() {
+    super();
+    this.state = {
+      resultCat: [],
+      resultUser: []
+    };
+    this.getCat = this.getCat.bind(this);
+  }
+
+  getCat() {
+    console.log('click');
+    $.getJSON(finalURL).done(function(data) {
+      var result = data.id;
+      var user = data.user.name;
+      this.setState({resultCat: result, resultUser: user}, function() {
+        console.log(this.state);
+      });
+      // console.log(result, user);
+    }.bind(this));
+  }
+
+
+  // componentDidMount() {
+  //  this.getCat();
+  // }
+
   render() {
     return (
       <div className="about">
@@ -11,6 +46,7 @@ class About extends Component {
         <p>
          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel dolor id leo hendrerit sodales vitae ut felis. Nam viverra tellus posuere, elementum sem nec, scelerisque metus. Morbi at mauris eu lectus lacinia placerat sed dapibus sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla scelerisque orci, eget ornare nibh lacinia vitae. Sed pulvinar est quis orci vulputate imperdiet. Phasellus condimentum nisl nec tempus suscipit. Curabitur tristique nunc at enim iaculis suscipit. Duis eu dui a enim egestas tristique. Aliquam id sem interdum, faucibus purus eu, rutrum urna. Vivamus in mauris lacus. Nunc at mi non lacus fermentum feugiat quis vel elit. Duis dapibus eros lectus, ac suscipit quam sodales et.
         </p>
+        <button onClick={this.getCat.bind(this)}>Cat</button>
         </div>
       </div>
     );
