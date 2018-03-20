@@ -45,10 +45,12 @@ header {
     .home .home-text .home-name {
       margin: 0;
       padding-top: 140px;
-      color: #FDA7DF;
-      text-shadow: 0px 1px 5px #000000; }
+      color: #ffe6ff;
+      text-shadow: 0px 1px 5px #000000;
+      font-size: 2em; }
     .home .home-text .home-title {
-      margin-top: 5px; }
+      margin-top: 5px;
+      font-size: 1.2em; }
 
 .about {
   margin: 15px; }

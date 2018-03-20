@@ -25,7 +25,7 @@ class About extends Component {
     $.getJSON(finalURL).done(function(data) {
       var resultPhoto = data.urls.thumb;
       var user = data.user.name;
-      this.setState({resultCat: resultPhoto, resultUser: 'Photo by: ' + user}, function() {
+      this.setState({resultCat: resultPhoto, resultUser: 'Awesome photo by: ' + user}, function() {
         console.log(this.state);
       });
     }.bind(this))
