@@ -38,8 +38,7 @@ class About extends Component {
           <h3>About Me</h3>
 
           <p>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel dolor id leo hendrerit sodales vitae ut felis. Nam viverra tellus posuere, elementum sem nec, scelerisque metus. Morbi at mauris eu lectus lacinia placerat sed dapibus sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla scelerisque orci, eget ornare nibh lacinia vitae. Sed pulvinar est quis orci vulputate imperdiet. Phasellus condimentum nisl nec tempus suscipit. Curabitur tristique nunc at enim iaculis suscipit. Duis eu dui a enim egestas tristique. Aliquam id sem interdum, faucibus purus eu, rutrum urna. Vivamus in mauris lacus. Nunc at mi non lacus fermentum feugiat quis vel elit. Duis dapibus eros lectus, ac suscipit quam sodales et.
-          </p>
+Hi there! My name is Catherine and I'm a self-taught web developer in Los Angeles, California. I graduated from UCLA with a degree in Economics only to realize that my true passion lies in web development. I love exploring various frameworks and building amazing tools with clean, easy-to-read code. I'm currently seeking a Front-End Developer role in the greater Los Angeles area. I'd love to join a team of passionate and dedicated individuals who value hard work and enjoy the grind. Feel free to check out more of my work on Github and connect with me on Linkedin!          </p>
 
         </div>
 
