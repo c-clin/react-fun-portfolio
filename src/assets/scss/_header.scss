@@ -33,6 +33,10 @@ header {
 			color: #FDA7DF;
 			@include transition(.4s ease-in-out);
 			}
+
+			@media only screen and (max-width: 500px) {
+				font-size: 15px;
+			} 
 		}
 	}
 }

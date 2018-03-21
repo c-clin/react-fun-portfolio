@@ -22,7 +22,7 @@ class About extends Component {
 
   getCat() {
     $.getJSON(finalURL).done(function(data) {
-      var resultPhoto = data.urls.thumb;
+      var resultPhoto = data.urls.small;
       var user = data.user.name;
       this.setState({resultCat: resultPhoto, resultUser: 'Awesome photo by: ' + user});
     }.bind(this))
@@ -38,7 +38,7 @@ class About extends Component {
           <h3>About Me</h3>
 
           <p>
-Hi there! My name is Catherine and I'm a self-taught web developer in Los Angeles, California. I graduated from UCLA with a degree in Economics only to realize that my true passion lies in web development. I love exploring various frameworks and building amazing tools with clean, easy-to-read code. I'm currently seeking a Front-End Developer role in the greater Los Angeles area. I'd love to join a team of passionate and dedicated individuals who value hard work and enjoy the grind. Feel free to check out more of my work on Github and connect with me on Linkedin!          </p>
+            Hi there! My name is Catherine and I'm a self-taught web developer in Los Angeles, California. I graduated from UCLA with a degree in Economics only to realize that my true passion lies in web development. I love exploring various frameworks and building amazing tools with clean, easy-to-read code. I'm currently seeking a Front-End Developer role in the greater Los Angeles area. I'd love to join a team of passionate and dedicated individuals who value hard work and enjoy the grind. Feel free to check out more of my work on Github and connect with me on Linkedin!          </p>
 
         </div>
 
