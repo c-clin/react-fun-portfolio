@@ -26,12 +26,13 @@ header {
 		line-height: normal;
 		color: $white;
 		text-decoration: none;
-		}	
-
-		&:hover {
-		text-decoration: none;
-		color: dodgerblue;
 		@include transition(.4s ease-in-out);
+
+			&:hover {
+			text-decoration: none;
+			color: #FDA7DF;
+			@include transition(.4s ease-in-out);
+			}
 		}
 	}
 }

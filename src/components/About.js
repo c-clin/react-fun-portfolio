@@ -23,14 +23,14 @@ class About extends Component {
   getCat() {
     console.log('click');
     $.getJSON(finalURL).done(function(data) {
-      var resultPhoto = data.urls.thumb;
+      var resultPhoto = data.urls.small;
       var user = data.user.name;
       this.setState({resultCat: resultPhoto, resultUser: 'Awesome photo by: ' + user}, function() {
         console.log(this.state);
       });
     }.bind(this))
-    .fail(function() {
-      console.log('There was an error loading the Unsplash API');
+    .fail(function(err) {
+      console.log(err);
     })
   }
 
@@ -43,12 +43,14 @@ class About extends Component {
            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel dolor id leo hendrerit sodales vitae ut felis. Nam viverra tellus posuere, elementum sem nec, scelerisque metus. Morbi at mauris eu lectus lacinia placerat sed dapibus sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla scelerisque orci, eget ornare nibh lacinia vitae. Sed pulvinar est quis orci vulputate imperdiet. Phasellus condimentum nisl nec tempus suscipit. Curabitur tristique nunc at enim iaculis suscipit. Duis eu dui a enim egestas tristique. Aliquam id sem interdum, faucibus purus eu, rutrum urna. Vivamus in mauris lacus. Nunc at mi non lacus fermentum feugiat quis vel elit. Duis dapibus eros lectus, ac suscipit quam sodales et.
           </p>
 
-          <button onClick={this.getCat.bind(this)}>Get cat!</button>
+          <div className="unsplash">
+            <button onClick={this.getCat.bind(this)}>get cat!</button>
+            <figure className="randomCatPhoto">
+              <img src={this.state.resultCat} />
+              <figcaption>{this.state.resultUser}</figcaption>
+            </figure>
+          </div>
 
-          <figure className="randomCatPhoto">
-            <img src={this.state.resultCat} />
-            <figcaption>{this.state.resultUser}</figcaption>
-          </figure>
 
       </div>
     );

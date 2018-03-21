@@ -1,3 +1,51 @@
 .about {
 	margin: 15px;
+
+	.unsplash {
+		margin: auto;
+		overflow: auto;
+
+		button {
+			padding: 20px 25px;
+			font-size: 25px;
+			color: #f8a5c2;
+			background-color: transparent;
+			border: none;
+			outline: none;
+		    display: inline-block;
+		    position: relative;
+		    text-align: center;
+		    color: #FFFFFF;
+		    left: 50%;
+		    transform: translateX(-50%);		
+			@include transition(.4s ease-in-out);
+
+			&:hover {
+				background-color: #833471;
+				color: #F8EFBA;
+				cursor: pointer;
+				@include transition(.4s ease-in-out);
+			}
+		}
+		
+		.randomCatPhoto {
+			width: max-content;
+			padding-right: 0px;
+			margin: auto;
+			margin-top: 30px
+		}
+
+		img {
+			border: 1px solid $black;
+
+		}
+
+		figcaption {
+			font-size: small;
+			text-align: center;
+
+		}
+	}
+
+
 }

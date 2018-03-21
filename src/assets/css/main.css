@@ -24,13 +24,16 @@ header {
       font-size: 19px;
       line-height: normal;
       color: #FFFFFF;
-      text-decoration: none; }
-    header nav:hover {
       text-decoration: none;
-      color: dodgerblue;
       -webkit-transition: 0.4s ease-in-out;
       -moz-transition: 0.4s ease-in-out;
       transition: 0.4s ease-in-out; }
+      header nav a:hover {
+        text-decoration: none;
+        color: #FDA7DF;
+        -webkit-transition: 0.4s ease-in-out;
+        -moz-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out; }
 
 .home {
   top: 0;
@@ -54,6 +57,42 @@ header {
 
 .about {
   margin: 15px; }
+  .about .unsplash {
+    margin: auto;
+    overflow: auto; }
+    .about .unsplash button {
+      padding: 20px 25px;
+      font-size: 25px;
+      color: #f8a5c2;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      color: #FFFFFF;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transition: 0.4s ease-in-out;
+      -moz-transition: 0.4s ease-in-out;
+      transition: 0.4s ease-in-out; }
+      .about .unsplash button:hover {
+        background-color: #833471;
+        color: #F8EFBA;
+        cursor: pointer;
+        -webkit-transition: 0.4s ease-in-out;
+        -moz-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out; }
+    .about .unsplash .randomCatPhoto {
+      width: max-content;
+      padding-right: 0px;
+      margin: auto;
+      margin-top: 30px; }
+    .about .unsplash img {
+      border: 1px solid #000000; }
+    .about .unsplash figcaption {
+      font-size: small;
+      text-align: center; }
 
 .contact {
   margin: 15px; }
