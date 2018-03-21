@@ -1,9 +1,21 @@
 .about {
-	margin: 15px;
+	margin: 23px;
+	position: relative;
+	
+	.about-me {
+		width: 30%;
+		display: inline-block;
+
+	}
 
 	.unsplash {
 		margin: auto;
+		margin-top: 19px;
 		overflow: auto;
+		width: 40%;
+	    display: inline-block;
+	    position: absolute;		
+	    top: 0;
 
 		button {
 			padding: 20px 25px;

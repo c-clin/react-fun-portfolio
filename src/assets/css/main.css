@@ -56,10 +56,19 @@ header {
       font-size: 1.2em; }
 
 .about {
-  margin: 15px; }
+  margin: 23px;
+  position: relative; }
+  .about .about-me {
+    width: 30%;
+    display: inline-block; }
   .about .unsplash {
     margin: auto;
-    overflow: auto; }
+    margin-top: 19px;
+    overflow: auto;
+    width: 40%;
+    display: inline-block;
+    position: absolute;
+    top: 0; }
     .about .unsplash button {
       padding: 20px 25px;
       font-size: 25px;
@@ -95,7 +104,7 @@ header {
       text-align: center; }
 
 .contact {
-  margin: 15px; }
+  margin: 23px; }
 
 body {
   margin: 0;
