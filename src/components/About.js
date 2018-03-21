@@ -21,16 +21,13 @@ class About extends Component {
   }
 
   getCat() {
-    console.log('click');
     $.getJSON(finalURL).done(function(data) {
       var resultPhoto = data.urls.small;
       var user = data.user.name;
-      this.setState({resultCat: resultPhoto, resultUser: 'Awesome photo by: ' + user}, function() {
-        console.log(this.state);
-      });
+      this.setState({resultCat: resultPhoto, resultUser: 'Awesome photo by: ' + user});
     }.bind(this))
-    .fail(function(err) {
-      console.log(err);
+    .fail(function(error) {
+      throw new Error('fail(): ' + error);
     })
   }
 
